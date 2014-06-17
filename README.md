@@ -1,4 +1,5 @@
 my-first-mod
 ============
 
-my first minecraft mod
+My First Minecraft Mod following ScratchForFun's multiblock windmill tutorial
+

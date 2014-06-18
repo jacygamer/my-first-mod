@@ -18,9 +18,13 @@ public class TestGuiHandler implements IGuiHandler {
 
         switch(ID){
             case ModHandlers.guiIDWindmill:
-                if(tileEntity instanceof TileEntityWindmill){
-                    return new ContainerWindmill(player.inventory, (TileEntityWindmill)tileEntity) ;
+                while(tileEntity instanceof TileEntityWindmill && world.getBlockMetadata(x,y+1,z)<8){
+                    y++;
+
+
                 }
+                System.out.println(world.getBlockMetadata(x,y,z));
+                return new ContainerWindmill(player.inventory, (TileEntityWindmill)world.getTileEntity(x, y, z)) ;
         }
         return null;
     }
@@ -31,11 +35,13 @@ public class TestGuiHandler implements IGuiHandler {
 
         switch(ID){
             case ModHandlers.guiIDWindmill:
-                if(tileEntity instanceof TileEntityWindmill){
-                    System.out.println(world.getBlockMetadata(x,y,z));
+               while(tileEntity instanceof TileEntityWindmill && world.getBlockMetadata(x,y+1,z)<8){
+                    y++;
 
-                    return new GuiWindmill(player.inventory, (TileEntityWindmill)tileEntity) ;
+
                 }
+                System.out.println(world.getBlockMetadata(x,y,z));
+                return new GuiWindmill(player.inventory, (TileEntityWindmill)world.getTileEntity(x, y, z)) ;
         }
         return null;
     }

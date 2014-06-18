@@ -1,0 +1,17 @@
+[13:44:29] [main/INFO]: Setting user: jlccraft
+[13:44:31] [Client thread/INFO]: LWJGL Version: 2.9.0
+[13:44:43] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:TestMod
+[13:44:44] [Sound Library Loader/INFO]: Sound engine started
+[13:44:48] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[13:44:48] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[13:44:48] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:TestMod
+[13:44:49] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[13:44:49] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[13:44:50] [Sound Library Loader/INFO]: Sound engine started
+[13:44:51] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
+[13:45:04] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
+[13:45:04] [Server thread/INFO]: Generating keypair
+[13:45:04] [Server thread/INFO]: Preparing start region for level 0
+[13:45:05] [Server thread/INFO]: Preparing spawn area: 98%
+[13:45:07] [Server thread/INFO]: jlccraft[local:E:a99e106b] logged in with entity id 131 at (-680.1395431110985, 4.0, 463.30000001192093)
+[13:45:07] [Server thread/INFO]: jlccraft joined the game

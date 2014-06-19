@@ -20,10 +20,12 @@ public class ModBlocks {
 
 
 
+
     public static void Init(){
 
         GameRegistry.registerBlock(blockWindmill, "blockWindmill");
         GameRegistry.registerBlock(blockWindmillGround, "blockWindmillGround");
+
 
 
 

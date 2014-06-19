@@ -16,5 +16,6 @@ public class ClientProxy extends CommonProxy {
         ClientRegistry.bindTileEntitySpecialRenderer(TileEntityWindmillFloor.class, new TileEntityRenderWindmillFloor());
 
 
+
     }
 }

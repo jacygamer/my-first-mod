@@ -50,6 +50,7 @@ public class BlockWindmill extends BlockContainer {
         setHardness(5F);
         setResistance(7.0F);
 
+
     }
     @Override
     public String getUnlocalizedName()

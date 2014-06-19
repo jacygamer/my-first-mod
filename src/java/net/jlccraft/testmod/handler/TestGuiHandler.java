@@ -16,33 +16,54 @@ public class TestGuiHandler implements IGuiHandler {
     public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
         TileEntity tileEntity = world.getTileEntity(x, y, z);
 
-        switch(ID){
+
+
+        switch (ID) {
             case ModHandlers.guiIDWindmill:
-                while(tileEntity instanceof TileEntityWindmill && world.getBlockMetadata(x,y+1,z)<8){
+
+                while (tileEntity instanceof TileEntityWindmill && world.getBlockMetadata(x, y, z) < 7) {
+
                     y++;
-
-
                 }
-                System.out.println(world.getBlockMetadata(x,y,z));
-                return new ContainerWindmill(player.inventory, (TileEntityWindmill)world.getTileEntity(x, y, z)) ;
+                System.out.println(world.getBlockMetadata(x, y, z));
+                        return new ContainerWindmill(player.inventory, (TileEntityWindmill) world.getTileEntity(x, y, z));
+
+
+
         }
+
+
+
         return null;
+
     }
 
     @Override
     public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
         TileEntity tileEntity = world.getTileEntity(x, y, z);
 
-        switch(ID){
-            case ModHandlers.guiIDWindmill:
-               while(tileEntity instanceof TileEntityWindmill && world.getBlockMetadata(x,y+1,z)<8){
-                    y++;
 
+        switch (ID) {
+            case ModHandlers.guiIDWindmill:
+
+                while(tileEntity instanceof TileEntityWindmill && world.getBlockMetadata(x, y, z) <7) {
+                y++;
 
                 }
-                System.out.println(world.getBlockMetadata(x,y,z));
-                return new GuiWindmill(player.inventory, (TileEntityWindmill)world.getTileEntity(x, y, z)) ;
+
+
+
+
+                    System.out.println(world.getBlockMetadata(x, y, z));
+
+                    return new GuiWindmill(player.inventory, (TileEntityWindmill) world.getTileEntity(x, y, z));
+
+                }
+                return null;
+
+
         }
-        return null;
+
     }
-}
+
+
